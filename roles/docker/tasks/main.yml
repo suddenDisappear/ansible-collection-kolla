@@ -3,6 +3,7 @@
   when: enable_docker_repo | bool
 
 - import_tasks: install.yml
+  tags: online
 
 - import_tasks: config.yml
 
