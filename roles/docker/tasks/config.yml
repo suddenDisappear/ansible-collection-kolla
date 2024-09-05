@@ -45,6 +45,7 @@
     mode: 0644
   notify:
     - Restart docker
+  when: enable_docker_config | bool
 
 - name: Remove old docker options file
   become: True

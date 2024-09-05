@@ -61,3 +61,6 @@ containerd_configure_for_zun: "{{ docker_configure_for_zun | bool }}"
 
 # Whether to restart docker systemd unit or reload
 docker_systemd_reload: false
+
+# Whether to enable auto generate and overwrite docker config
+enable_docker_config: true
